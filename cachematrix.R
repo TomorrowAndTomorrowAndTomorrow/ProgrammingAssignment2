@@ -3,10 +3,12 @@
 ## computed - rather than computing the inverse for a particular matrix repeatedly.
 ## The following two functions together implement the calculation - and caching
 ## of the inverse of a matrix (which is assumed to be invertible).
+## --------------
 
 ## This function encapsulates (1) the matrix to be inverted, (2) [a variable
 ## carrying the inverse matrix, and (3) functions which allow another function to
 ## access or alter either or both of the inputted matrix and its inverse.
+
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
